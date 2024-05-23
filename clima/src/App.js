@@ -42,13 +42,13 @@ function App() {
       });
   };
 
-  const dadoEntrada = (evento) => {
+  const inputCidade = (evento) => {
     setCity(evento.target.value); //consigo pegar a tecla digitada
   };
 
   return (
     <div className="App">
-      <input type="text" onChange={dadoEntrada}></input>
+      <input type="text" onChange={inputCidade}></input>
       <button onClick={callApi}>Buscar</button>
       <p>{temperatura}</p>
       <p>{city}</p>
